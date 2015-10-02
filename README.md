@@ -13,7 +13,7 @@ Add this line to your application's `Projectfile`:
 
 ```crystal
 deps do
-  github "rhysd/open"
+  github "rhysd/open.cr"
 end
 ```
 
@@ -22,7 +22,7 @@ end
 ## Usage
 
 ```crystal
-require "external"
+require "external/open"
 
 External::open "http://crystal-lang.org/"
 External::open "file:///Users/foo/Documents/somedoc.pdf"
