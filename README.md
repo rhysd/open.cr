@@ -1,4 +1,6 @@
-# External::open
+External::open
+==============
+[![Build Status](https://travis-ci.org/rhysd/open.cr.svg)](https://travis-ci.org/rhysd/open.cr)
 
 `External::open` is a method to open something in manner or current OS.
 This is inspired by [node-open](https://github.com/pwnall/node-open).
