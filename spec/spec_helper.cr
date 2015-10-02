@@ -1,2 +1,2 @@
 require "spec"
-require "../src/open"
+require "../src/external/open"
