@@ -2,7 +2,7 @@ External::open
 ==============
 [![Build Status](https://travis-ci.org/rhysd/open.cr.svg)](https://travis-ci.org/rhysd/open.cr)
 
-`External::open` is a method to open something in manner or current OS.
+`External.open` is a method to open something in manner or current OS.
 This is inspired by [node-open](https://github.com/pwnall/node-open).
 
 
@@ -24,10 +24,10 @@ end
 ```crystal
 require "external/open"
 
-External::open "http://crystal-lang.org/"
-External::open "file:///Users/foo/Documents/somedoc.pdf"
-External::open "../../README.md"
-External::open "musics/bar.mp3"
+External.open "http://crystal-lang.org/"
+External.open "file:///Users/foo/Documents/somedoc.pdf"
+External.open "../../README.md"
+External.open "musics/bar.mp3"
 ```
 
 
