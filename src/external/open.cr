@@ -69,7 +69,7 @@ module External
   #   External::open "../../README.md"
   #   External::open "musics/bar.mp3"
   # ```
-  def self.open(something: String, app = nil, platform = nil)
+  def self.open(something : String, app = nil, platform = nil)
     system("#{opener(app, platform)} '#{something}'")
   end
 end
