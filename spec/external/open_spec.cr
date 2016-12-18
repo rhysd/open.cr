@@ -19,13 +19,13 @@ describe External do
     end
 
     it "returns proper command string for current platform" do
-      ifdef darwin
+      {% if flag?(:darwin) %}
         External.opener.should eq External.opener(nil, :darwin)
-      elsif windows
+      {% elsif flag?(:windows) %}
         External.opener.should eq External.opener(nil, :windows)
-      else
+      {% else %}
         External.opener.should eq External.opener(nil, :linux)
-      end
+      {% end %}
     end
   end
 

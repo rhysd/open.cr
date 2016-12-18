@@ -49,13 +49,13 @@ module External
       end
     end
 
-    ifdef darwin
+    {% if flag?(:darwin) %}
       opener_darwin app
-    elsif windows
+    {% elsif flag?(:windows) %}
       opener_windows app
-    else
+    {% else %}
       opener_others app
-    end
+    {% end %}
   end
 
   # Opens something externally in manner of your OS.

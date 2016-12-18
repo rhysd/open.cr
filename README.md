@@ -9,15 +9,13 @@ This is inspired by [node-open](https://github.com/pwnall/node-open).
 
 ## Installation
 
-Add this line to your application's `Projectfile`:
+Add this to your application's `shard.yml`:
 
-```crystal
-deps do
-  github "rhysd/open.cr"
-end
+```yaml
+dependencies:
+  open.cr:
+    github: rhysd/open.cr
 ```
-
-
 
 ## Usage
 
